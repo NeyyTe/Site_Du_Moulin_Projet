@@ -216,3 +216,11 @@ button:hover {
     text-decoration: none;
     box-sizing: border-box;
 }
+
+header{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Images/Img_gite.jpg);
+    background-size: cover;
+    background-position: center;
+}
