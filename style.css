@@ -8,14 +8,26 @@
 
 }
 
+html,body {
+   width: 100%;
+   height: 100%;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+    }
+
 /* ---------------------- Scrollbar --------------------- */
 ::-webkit-scrollbar {
     width: 20px;
 }
 
+
+
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgb(0, 0, 0);
-    border-radius: 10px;
+    background-color: black;
+
+
 
 }
 
@@ -48,7 +60,7 @@
 
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0)), url(./Images/Gite-25295-Sotta-Le-Sud-Corse-Corse-du-Sud-labellise-Gites-de-France-la-pis.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url(./Images/Gite-25295-Sotta-Le-Sud-Corse-Corse-du-Sud-labellise-Gites-de-France-la-pis.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,7 +71,7 @@
 
 /* ---------------- Logo ------------------ */
 .logo {
-    width: 122px;
+    width: 8vmax;
     cursor: pointer;
 }
 
@@ -83,11 +95,13 @@
 
 
 /* ----------------------------- NAV_Links (D)  ------------------------------- */
-*/ .nav_links {
+ .nav_links {
     list-style: none;
 
     display: flex;
 }
+
+
 
 .nav_links li {
     display: inline-block;
@@ -133,9 +147,11 @@
     -o-transition: width 0.3s;
 }
 
-.nav_links li a:hover::after {
+.nav_links li:not(.nav_links li:last-of-type) a:hover::after {
     width: 50%;
+    
 }
+
 
 /* ----------------------------- NAV_Links (F)  ------------------------------- */
 
@@ -157,6 +173,7 @@
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     background-size: 300% 100%;
     cursor: pointer;
+  
 }
 
 .contact:hover {
@@ -181,6 +198,7 @@
     width: 37px;
     display: flex;
     margin-right: 50px;
+  
 }
 
 .drapeau {
@@ -194,9 +212,10 @@
 }
 
 .titre {
-    font-size: 1.5em;
-    line-height: 100px;
+    font-size: 1.5vmax;
+    line-height: 2.2;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -205,8 +224,9 @@
     margin-top: 140px;
     font-family: 'Inria Serif', serif;
     letter-spacing: 6px;
-    DATA-TRANSITION: ZOOM-IN FADE-OUT
 }
+
+
 
 .btn {
     width: 180px;
@@ -227,6 +247,8 @@
     background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     margin-top: 150px;
+   
+    
 }
 
 .btn:hover {
@@ -236,6 +258,14 @@
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
     color: rgb(255, 255, 255);
+}
+
+.formules{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 .telephone {
@@ -259,7 +289,6 @@
     margin-left: auto;
     display: flex;
     justify-content: space-evenly;
-
 
 }
 
@@ -287,6 +316,7 @@
 }
 
 
+
 /* ------------------------------------------  CONTAINER_TITRE_CATEGORIE (D)  -------------------------------------------- */
 
 .main_container_section_titre_hebergement,
@@ -312,9 +342,9 @@
 
 .title_hebergement,
 .title_avis {
-    width: 27%;
+    min-width: 29%;
     color: rgb(255, 255, 255);
-    font-size: 36px;
+    font-size: 32px;
     border-radius: 50px;
     text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.91);
     border: none;
@@ -322,6 +352,7 @@
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -347,18 +378,7 @@
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.75);
 }
 
-/* .line2 hr:before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border-radius: 80px;
-    border: 5px solid rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-  display: flex;
-  align-items: center;
-  
-} */
+
 
 /* ---------------------------------------  CONTAINER_TITRE_CATEGORIE (F)  ---------------------------------------- */
 
@@ -558,7 +578,7 @@
     background-color: var(--bg_color);
     text-align: center;
     padding-top: 60px;
-background-color: #18222e;
+    background-color: #18222e;
 }
 
 
@@ -589,7 +609,8 @@ background-color: #18222e;
     width: auto;
     background-color: var(--bg_color);
     padding-bottom: 70px;
-background-color: #18222e;
+    background-color: #18222e;
+    position: relative;
 }
 
 .Cap_nord_div a {
@@ -606,6 +627,37 @@ background-color: #18222e;
 
 }
 
+.container_top{
+
+        --fade: 120px;
+     
+        display: flex;
+        align-items: flex-end;
+        width: 60px;
+        --webkit-mask:linear-gradient(#0000 100vh,#000 calc(100vh + var(--fade)));
+      }
+
+
+#bouton {
+    --offset: 2000px; 
+    --fade: 120px;
+    background-color: var(--gold);
+    position: fixed;
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background: var(--gold);
+    border-radius: 100px;
+    white-space: nowrap;
+    z-index: 1000;
+    right:0;
+    bottom: 20px;
+    margin-right: 40px;
+   
+    
+}
+
 /* ----------------------  Cap_Nord_img F -------------------------- */
 
 /* -------------------------------------------  PARTENAIRE_SECTION (F)  -------------------------------------------- */
@@ -620,6 +672,7 @@ background-color: #18222e;
     height: auto;
     background-color: rgb(0, 0, 0);
     display: flex;
+position: relative;
 
 }
 
@@ -653,7 +706,7 @@ background-color: #18222e;
     display: block;
     line-height: 2.5;
     transition: all 0.3s ease;
-    /* text-decoration: underline; */
+    
 }
 
 .footer-col ul li a:hover {
@@ -714,10 +767,31 @@ background-color: #18222e;
 }
 
 
+.premiere_col{
+text-decoration: underline;
+
+}
+
+
+
 .fa-envelope,
 .fa-phone,
 .fa-location-dot {
     color: var(--gold);
 }
 
-/* ------------------------  Social link & Icons F ------------------------ */
+/* ------------------------  Social link & Icons F ------------------------*/
+
+
+
+/* ======================================== Responsive ============================================= */
+
+
+@media screen and (max-width:1374px)
+{
+   .nav_links{
+   display: none;
+   }
+
+
+}

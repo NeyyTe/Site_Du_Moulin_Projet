@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gite Du Moulin</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="icon" href="./Images/logo-2.png">
+    <link rel="stylesheet" href="hebergement.html">
+
+    <!-- =============================  Scroll_Reveal_script  ============================= -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+
 </head>
 
 <body>
@@ -15,20 +22,21 @@
     <!-- ------------------------------------------- HomePage (D) --------------------------------------------- -->
 
 
-    <div class="container">
+    <div class="container" id="ancre_back_to_top">
         <div class="telephone">
             <img src="./Images/appel.png" alt="">
             <a href="tel:+33723456789">07.23.45.67.89</a>
         </div>
         <header class="header">
-            <div><img src="./Images/logo-2.png" alt="logo" class="logo"></div>
+            <div><a href=""><img src="./Images/logo-2.png" alt="logo" class="logo"></a></div>
             <nav class="nav_links">
                 <ul>
-                    <li><a href="#">Hébergement</a></li>
+                    <li><a href="hebergement.html">Hébergement</a></li>
                     <li><a href="#">Aux Alentours</a></li>
                     <li><a href="#">Tarifs</a></li>
                     <li><a class="contact" href="#">Contact</a></li>
                 </ul>
+                
             </nav>
             <div class="icons">
                 <div>
@@ -48,9 +56,15 @@
             <h2>BIENVENUE <br> AU </h2>
             <h1> GÎTE DU MOULIN PIERRE MONT !</h1>
         </div>
-        <div>
+        <div class="formules">
             <a href="#ancre_hebergement"><button class="btn">Formules <i class="fa-solid fa-arrow-down fa-bounce"></i>
                 </button></a>
+            <div class="container_top">
+                <a id="bouton" href="#ancre_back_to_top"><i class="fa-solid fa-chevron-up fa-2x"></i></a>
+            </div>
+            <div class="wave_separator">
+               
+            </div>
         </div>
     </div>
 
@@ -64,11 +78,11 @@
     <!-- ---------------------------  Formules_titre_hebergement D  ------------------------------------ -->
 
     <main>
-        <section class="main_container_section_titre_hebergement" >
+        <section class="main_container_section_titre_hebergement">
             <div class="container_title_hebergement">
 
 
-                <div class=" lines line1" >
+                <div class=" lines line1">
                     <hr>
                 </div>
                 <div class="title_hebergement">
@@ -89,7 +103,7 @@
 
         <section class="section_container" id="ancre_hebergement">
             <a href="">
-                <article class="confort_card_container">
+                <article class="articleh confort_card_container">
                     <h3 class="confort_title">Confort</h3>
                     <img class="confort_img" src="./Images/salle-a-manger-ameublement-moderne-luxe.jpg" alt="">
                     <a class="confort_button_en_savoir_plus"> En savoir plus</a>
@@ -99,7 +113,7 @@
             </a>
 
             <a href="">
-                <article class="tradition_card_container">
+                <article class="articleh tradition_card_container">
                     <h3 class="tradition_title">Tradition </h3>
                     <p class="la_plus_interessante">La plus interéssante <i id="star"
                             style="--fa-animation-duration: 2.5s; --fa-beat-scale: 1.5"
@@ -112,7 +126,7 @@
             </a>
 
             <a href="">
-                <article class="liberté_card_container">
+                <article class="articleh liberté_card_container">
                     <h3 class="liberté_title">Liberté </h3>
                     <img class="liberté_img" src="./Images/liberté_img.jpg" alt="">
                     <a class="liberté_button_en_savoir_plus"> En savoir plus</a>
@@ -267,8 +281,10 @@
             <a href="https://www.capnorddecouvertes.fr/" target="_blank">
                 <img class="img_cap_nord" src="./Images/Cap_nord_partenaire.png" alt="Cap_nord_logo">
             </a>
+
         </div>
 
+        <a href=""></a>
 
     </main>
     <!-- ---------------------- Img_cap_nord_partenaire F ----------------- -->
@@ -279,10 +295,10 @@
     <div class="footer_container">
         <footer class="footer">
             <div class="row">
-                <div class="footer-col">
+                <div class=" premiere_col footer-col">
                     <h4>L'entreprise</h4>
                     <ul>
-                        <li><a href="#">Mention Légales </a></li>                        
+                        <li><a href="#">Mention Légales</a></li>
                         <li><a href="#">Conditions Générales</a></li>
                     </ul>
                 </div>
@@ -290,9 +306,11 @@
                 <div class="footer-col">
                     <h4>Nous Contacter</h4>
                     <ul>
-                        <li><a href="#"><i class="fa-solid fa-envelope"></i> Email</a></li>
-                        <li><a href="#"><i class="fa-solid fa-phone"></i> Téléphone</a></li>
-                        <li><a href="#"><i class="fa-solid fa-location-dot"></i> Localisation</a></li>
+                        <li><a href="mailto:maxxence.marechal@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+                        </li>
+                        <li><a href="tel:+33684169326"><i class="fa-solid fa-phone"></i> Téléphone</a></li>
+                        <li><a href="">
+                                <i class="fa-solid fa-location-dot"></i> Localisation</a></li>
                     </ul>
                 </div>
 
@@ -317,6 +335,8 @@
                             <i class="fa-brands fa-cc-paypal fa-3x"></i>
                             <i class="fa-brands fa-cc-mastercard fa-3x"></i>
                             <i class="fa-brands fa-cc-visa fa-3x"></i>
+
+
                         </div>
                     </div>
                 </div>
@@ -326,10 +346,8 @@
     </div>
 
 
-
-
-
-
+    <script src="js.js"></script>
+    <!-- ======================== Font_Awesome_Script  ======================= -->
     <script src="https://kit.fontawesome.com/e9b4435ed4.js" crossorigin="anonymous"></script>
 
 </body>

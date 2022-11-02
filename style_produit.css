@@ -1,0 +1,47 @@
+@import url(style.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* ---------------------- Scrollbar --------------------- */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+    background-color: black;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4481eb;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--Bleu_Catégorie_titre);
+}
+
+/* ---------------------- Scrollbar --------------------- */
+
+
+
+/* ---------------------- COLORS_PRESET --------------------- */
+:root {
+
+    --bg_color: rgba(36, 86, 161, 19%);
+    --gold: #ECB365;
+    --Bleu_Catégorie_titre: #16408d;
+
+}
