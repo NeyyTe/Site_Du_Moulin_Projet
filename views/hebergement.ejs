@@ -8,7 +8,7 @@
     <title>Fiche produit</title>
     <link rel="icon" href="./Images/logo-2.png">
     <link rel="stylesheet" href="style_produit.css">
-    <link rel="stylesheet" href="index.html">
+    
 </head>
 
 <body>
@@ -20,21 +20,21 @@
 
     <header class="header">
         <div class="header_container">
-            <div><a href="index.html"><img src="./Images/logo-2.png" alt="logo" class="logo"><a>
+            <div><a href="/"><img src="./Images/logo-2.png" alt="logo" class="logo"><a>
             </div>
 
             <nav class="nav_links">
                 <ul>
-                    <li><a href="hebergement.html">Hébergement</a></li>
+                    <li><a href="hebergement">Hébergement</a></li>
                     <li><a href="#">Aux Alentours</a></li>
                     <li><a href="#">Tarifs</a></li>
-                    <li><a class="contact" href="#">Contact</a></li>
+                    <li><a class="contact" href="contact">Contact</a></li>
                 </ul>
             </nav>
 
             <div class="icons">
                 <div>
-                    <img src="./Images/search.png" alt="" class="search">
+                    <img src="../Images/search.png" alt="" class="search">
                 </div>
 
                 <div class="dropdown">
@@ -73,7 +73,7 @@
                 </div>
                 <div class="calendar">
 
-                    <input type="text" placeholder="Calendrier" style="width: 30%;height: 30px;">
+                    <input type="date" placeholder="Calendrier" style="width: 30%;height: 30px;" >
                 </div>
                 <div class="reserver_link">
                     <a href="#">Réserver</a>
@@ -120,7 +120,23 @@
 
             </div>
         </section>
-
+        <form action="" method="get" class="form-contact">
+            <div class="form-contact">
+              <label for="name">Votre Nom</label>
+              <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-contact">
+                <label for="firstname">Votre Prénom</label>
+                <input type="text" name="name" id="firstname" required>
+              </div>
+            <div class="form-contact">
+              <label for="email">tape ta grosse teub</label>
+              <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-contact">
+              <input type="submit" value="Envoyez">
+            </div>
+          </form>
 
 
     </main>

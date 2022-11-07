@@ -1,0 +1,24 @@
+{
+  "name": "site_moulin_v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ejs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeyyTe/Site_Moulin_Projet.git"
+  },
+  "author": "Maxx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeyyTe/Site_Moulin_Projet/issues"
+  },
+  "homepage": "https://github.com/NeyyTe/Site_Moulin_Projet#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

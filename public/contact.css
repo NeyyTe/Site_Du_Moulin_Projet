@@ -1,0 +1,22 @@
+@import url(style.css);
+
+
+.header {
+    width: 100%;
+    min-height: 18vh;
+    background-color: #2d3c58;
+
+}
+
+.header_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+}
+
+.logo {
+    width: 6vmax;
+}
