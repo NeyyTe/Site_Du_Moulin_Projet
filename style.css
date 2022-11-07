@@ -71,7 +71,7 @@ html,body {
 
 /* ---------------- Logo ------------------ */
 .logo {
-    width: 8vmax;
+    width: 7vmax;
     cursor: pointer;
 }
 
@@ -106,7 +106,7 @@ html,body {
 .nav_links li {
     display: inline-block;
     margin: 0px 30px;
-    font-size: 26px;
+    font-size: 23px;
     font-weight: bold;
     letter-spacing: 4px;
 
@@ -248,7 +248,6 @@ html,body {
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
     margin-top: 150px;
    
-    
 }
 
 .btn:hover {
@@ -264,14 +263,14 @@ html,body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-left: 50px;
 }
 
 .telephone {
 
-    width: 210px;
-    font-size: 22px;
+    width: 10vw;
+    font-size: 1.3em;
     font-weight: 600;
     color: white;
     cursor: pointer;
@@ -310,7 +309,7 @@ html,body {
 }
 
 .telephone img {
-    width: 25px;
+  
     color: white;
 
 }
@@ -639,12 +638,11 @@ html,body {
 
 
 #bouton {
-    --offset: 2000px; 
-    --fade: 120px;
+    
     background-color: var(--gold);
     position: fixed;
     text-decoration: none;
-    padding: 10px;
+    padding: 0.8vw;
     font-family: sans-serif;
     color: rgb(0, 0, 0);
     background: var(--gold);

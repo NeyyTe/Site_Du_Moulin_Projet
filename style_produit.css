@@ -1,6 +1,8 @@
 @import url(style.css);
 
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -44,4 +46,206 @@
     --gold: #ECB365;
     --Bleu_Catégorie_titre: #16408d;
 
+}
+
+/* ---------------------- COLORS_PRESET --------------------- */
+
+
+.header {
+    width: 100%;
+    min-height: 18vh;
+    background-color: #2d3c58;
+
+}
+
+.header_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+
+}
+
+.logo {
+    width: 6vmax;
+}
+
+main {
+    background-color: var(--bg_color);
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.section_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.titre_et_prix {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    font-size: 30px;
+
+}
+
+.titre_et_prix :is(p, span) {
+    font-weight: bold;
+}
+
+.titre_et_prix span {
+    font-size: 36px;
+    color: #1F1BC8;
+
+}
+
+.titre_et_prix p {
+    font-size: 55px;
+    text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.91);
+
+}
+
+.img_kota img {
+    width: 90%;
+    border-radius: 76px;
+    margin: 30px;
+
+}
+
+.catchline {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 40px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+.icons_descriptif {
+    display: flex;
+    gap: 45px;
+    margin-top: 40px;
+
+}
+
+.calendar ::placeholder {
+    color: black;
+    padding: 0 5px;
+    font-size: 17px;
+
+}
+
+.reserver_link {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.reserver_link a {
+    padding: 3px 35px;
+    background-color: rgba(22, 82, 237, 0.8);
+    border-radius: 20px;
+    color: white;
+    font-size: 35px;
+    box-shadow: 0 0px 15px 0 rgba(0, 0, 0, 0.75);
+    transition: all 0.4s ease;
+}
+
+.reserver_link a:hover {
+    background-color: rgba(9, 40, 119, 0.8);
+}
+
+.container_options {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-top: 3px solid var(--gold);
+    border-bottom: 3px solid var(--gold);
+
+}
+
+.tab_content {
+    width: 100%;
+    display: flex;
+
+}
+
+.tabs {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tabs button {
+    background-color: white;
+    float: left;
+    border: 1px solid var(--gold);
+    border-bottom: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 24px;
+    transition: 0.3s;
+}
+
+.tabs button.active {
+    background-color: rgb(60, 11, 196);
+}
+
+.tabs_contentt {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.option img {
+    width:70%;
+    border-radius: 15px;
+
+}
+
+.option4 img {
+    width: 50%;
+}
+
+.option2 img {
+    width: 95%;
+}
+
+.option h3 {
+    color: var(--Bleu_Catégorie_titre);
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.option p {
+    width: 40%;
+    margin-top: 20px;
+}
+
+.prix {
+    color: #1F1BC8;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
