@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -37,26 +39,63 @@
             </div>
     </header>
 
+    <main>
+        <h1 class="contacter_nous">Contacter-nous</h1>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Patronyme</legend>
+                <div>
+                    <label for="lastname">Nom</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                <div>
+                    <label for="firstname">Prénom</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Adresse</legend>
+                <div>
+                    <label for="street">N° et Libellé de voie</label>
+                    <input type="text" id="street" name="street" required>
+                </div>
+
+                <div>
+                    <label for="zipCode">Code Postal</label>
+                    <input type="text" id="zipCode" name="zipCode" maxlength="5" required>
+                </div>
+
+                <div>
+                    <label for="city">Ville</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre message</legend>
+                <div>
+                    <label for="birthdate">Date de naissance</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div>
+                    <label for="description">Descriptif :</label>
+                    <textarea placeholder="Votre message..."name="description" id="description" cols="60" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+           
+
+            <button>Envoyer</button>
+        </form>
+    </main>
 
 
 
 
-    <form action="" method="get" class="form-contact">
-        <div class="form-contact">
-          <label for="name">Votre Nom</label>
-          <input type="text" name="name" id="name" required>
-        </div>
-        <div class="form-contact">
-            <label for="firstname">Votre Prénom</label>
-            <input type="text" name="name" id="firstname" required>
-          </div>
-        <div class="form-contact">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div class="form-contact">
-          <input type="submit" value="Envoyez">
-        </div>
-      </form>
+
+
 </body>
+
 </html>
